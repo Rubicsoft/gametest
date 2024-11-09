@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bpb3g1wfi7c8o"]
+
+[ext_resource type="Texture2D" uid="uid://jtp37tk13ypy" path="res://texture_13.png" id="1_p2ms6"]
+
+[resource]
+albedo_texture = ExtResource("1_p2ms6")
+metallic = 0.5
+roughness = 0.93
+uv1_triplanar = true
+uv1_world_triplanar = true

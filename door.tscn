@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://nuecl5uyh1kh"]
+
+[ext_resource type="Script" path="res://door.gd" id="1_jmrbt"]
+
+[sub_resource type="SystemFont" id="SystemFont_qidiw"]
+font_names = PackedStringArray("Lucida Bright")
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qf3cc"]
+albedo_color = Color(0.772709, 0.60559, 0.179753, 1)
+roughness = 0.52
+
+[node name="Door" type="Node3D"]
+script = ExtResource("1_jmrbt")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05446, 0.0801751)
+pixel_size = 0.01
+text = "Door"
+font = SubResource("SystemFont_qidiw")
+outline_size = 0
+
+[node name="Geometry" type="CSGCombiner3D" parent="."]
+material_override = SubResource("StandardMaterial3D_qf3cc")
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Geometry"]
+size = Vector3(2, 3, 0.1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.442566, 0)
+operation = 2
+size = Vector3(1.75, 2.4967, 1)
