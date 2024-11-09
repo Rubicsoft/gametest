@@ -103,6 +103,18 @@ light_energy = 1.926
 omni_range = 1.735
 omni_attenuation = 3.632
 
+[node name="Suzanne2" type="MeshInstance3D" parent="Playground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.02457, 0.742188, -5.43251)
+cast_shadow = 0
+mesh = ExtResource("2_ogadc")
+surface_material_override/0 = SubResource("StandardMaterial3D_sm5o1")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Playground/Suzanne2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.12478)
+light_energy = 1.926
+omni_range = 1.735
+omni_attenuation = 3.632
+
 [node name="Walls" type="Node" parent="Playground"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Playground/Walls"]
