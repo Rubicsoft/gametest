@@ -135,6 +135,16 @@ surface_material_override/0 = ExtResource("1_hag2c")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Playground/Walls/MeshInstance3D3/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_f43eo")
 
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Playground/Walls"]
+transform = Transform3D(0.384494, 0, -4.12965, 0, 2.772, 0, 0.319632, 0, 4.96765, 4.88794, 1.636, 4.11716)
+mesh = SubResource("BoxMesh_wc0ec")
+surface_material_override/0 = ExtResource("1_hag2c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Playground/Walls/MeshInstance3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Playground/Walls/MeshInstance3D5/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_f43eo")
+
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Playground/Walls"]
 transform = Transform3D(-0.482963, 0, -1.67197, 0, 2.772, 0, 0.12941, 0, -6.23988, -8, 1.636, 0.933076)
 mesh = SubResource("BoxMesh_wc0ec")
@@ -168,7 +178,7 @@ is_door_open = true
 transform = Transform3D(0.978867, 0, 0.204496, 0, 1, 0, -0.204496, 0, 0.978867, -6.65112, 1.75, 0)
 
 [node name="Godot" type="Sprite3D" parent="."]
-transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, -2, 1, -2)
+transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, -3.63265, 1, -2)
 pixel_size = 0.001
 billboard = 1
 no_depth_test = true
