@@ -163,6 +163,9 @@ texture_albedo = ExtResource("5_p1vra")
 [node name="Diamond" parent="Playground" instance=ExtResource("4_64bam")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9038, 0.678331, 0)
 
+[node name="Diamond2" parent="Playground" instance=ExtResource("4_64bam")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.50949, 0.678331, -1.74335)
+
 [node name="Player" parent="." instance=ExtResource("2_3nc37")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
